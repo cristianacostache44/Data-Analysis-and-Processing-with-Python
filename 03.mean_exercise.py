@@ -9,3 +9,11 @@ def mean_func(x):
 
 lista = [10, 2, 30, 50, 300, 10]
 print(mean_func(lista))
+
+from functools import reduce
+
+def suma_nr(x, y):
+    return x + y
+
+reduce_result = int(reduce(suma_nr, lista))
+print(reduce_result/len(lista))

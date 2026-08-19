@@ -8,3 +8,7 @@ def more_than_five(lista):
 
 lista = [10, 2, 3712700, 50, 300 ,1002000]
 print(more_than_five(lista))
+
+
+filter_result = list(filter(lambda i: len(str(i)) > 5, lista))
+print(filter_result)

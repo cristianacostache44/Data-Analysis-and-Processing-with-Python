@@ -9,3 +9,12 @@ def fara_vocale(x):
     
 input_string = "Salutare, ce mai faci?"
 print(fara_vocale(input_string))
+
+vocale = "aeiouAEIOU"
+filter_result = list(filter(lambda i: i not in vocale, input_string))
+print(filter_result)
+
+from functools import reduce
+
+reduce_result = reduce(lambda x, y: x + y, filter(lambda i: i not in vocale, input_string))
+print(reduce_result)
